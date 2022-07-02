@@ -45,6 +45,25 @@ html {
   text-align: center;
   padding: .2rem 0;
   letter-spacing: .1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 5rem;
+  background-color: #d50000;
+  left: -20%;
+  transform: rotate(-40deg) translateX(-4rem);
+  transform-origin: left bottom;
+  opacity: .8;
+  transition: left .4s;
+}
+
+.nav-link:hover::before {
+  left: 105%;
 }
 
 /* End of Navbar */
