@@ -368,3 +368,23 @@ section {
   letter-spacing: .2rem;
 }
 /* End of Section 5 */
+
+@media(max-width: 1100px) {
+  .sale-bag {
+    width: 20rem;
+  }
+
+  .wine-bottle {
+    width: 50rem;
+  }
+
+  .section-5-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-img {
+    width: 40rem;
+    margin: 0 10rem;
+  }
+}
